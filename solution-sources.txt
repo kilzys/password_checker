@@ -1,0 +1,6 @@
+https://www.geeksforgeeks.org/python/string-punctuation-in-python/
+https://www.w3schools.com/python/python_file_open.asp
+https://www.geeksforgeeks.org/python/reading-writing-text-files-python/
+https://stackoverflow.com/questions/3939361/remove-specific-characters-from-a-string-in-python
+https://docs.python.org/3/tutorial/inputoutput.html
+https://www.geeksforgeeks.org/python/string-punctuation-in-python/
