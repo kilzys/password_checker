@@ -21,3 +21,6 @@ Hash is function that we use to transfer data into an output, this output is cal
 - https://docs.python.org/3/tutorial/inputoutput.html
 - https://www.geeksforgeeks.org/python/string-punctuation-in-python/
 - https://docs.python.org/3/library/string.html
+- https://www.google.com/search?client=opera&q=hash+one+way&sourceid=opera&ie=UTF-8&oe=UTF-8
+- https://developer.mozilla.org/en-US/docs/Glossary/Hash_function
+- https://en.wikipedia.org/wiki/Hash_function
