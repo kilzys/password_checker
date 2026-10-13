@@ -9,7 +9,7 @@ def pass_check(password):
 
     # If 'exit' the program leaves
     if password.lower().strip() == 'exit':
-        print("\033[m\n")
+        print("\033[m")
         return
 
     # If password is blank
