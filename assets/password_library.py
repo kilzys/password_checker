@@ -1,10 +1,10 @@
 # Adding encoding='utf-8' fix the program to run in Windows environments, since Windows by default uses Windows-1252 (cp-1252) which is a legacy encoding. Linux uses utf-8 by default
-with open('10k-most-common.txt', encoding='utf-8') as f1:
+with open('assets/10k-most-common.txt', encoding='utf-8') as f1:
         pass_lib1 = f1.read()
         lib1 = pass_lib1.split('\n')
         f1.close()
 
-with open('100k-most-used-passwords-NCSC.txt', encoding='utf-8') as f2: 
+with open('assets/100k-most-used-passwords-NCSC.txt', encoding='utf-8') as f2: 
         pass_lib2 = f2.read()
         lib2 = pass_lib2.split('\n')
         f2.close()

@@ -1,7 +1,7 @@
 # Imports
-from password_library import common_password
+from assets.password_library import common_password
 from string import punctuation, digits, ascii_lowercase, ascii_uppercase
-from hashpassword import hash_password
+from assets.hashpassword import hash_password
 
 # Functions
 secure_level = {'uppercase': False, 
