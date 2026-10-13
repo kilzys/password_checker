@@ -9,7 +9,7 @@ Hash is function that we use to transfer data into an output, this output is cal
 <br>
 
 ## To Do
-- hashlib function
+-
 
 <br>
 
@@ -24,3 +24,6 @@ Hash is function that we use to transfer data into an output, this output is cal
 - https://www.google.com/search?client=opera&q=hash+one+way&sourceid=opera&ie=UTF-8&oe=UTF-8
 - https://developer.mozilla.org/en-US/docs/Glossary/Hash_function
 - https://en.wikipedia.org/wiki/Hash_function
+- https://docs.python.org/3/library/hashlib.html
+- https://www.geeksforgeeks.org/python/hashlib-module-in-python/
+- https://www.geeksforgeeks.org/python/python-convert-string-to-bytes/

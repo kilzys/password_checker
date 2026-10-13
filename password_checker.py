@@ -1,6 +1,9 @@
-# Functions
+# Imports
 from password_library import common_password
 from string import punctuation, digits, ascii_lowercase, ascii_uppercase
+from hashpassword import hash_password
+
+# Functions
 secure_level = {'uppercase': False, 
     'lowercase': False,
     'length': False,
@@ -12,7 +15,7 @@ number = False
 def pass_check(password):
     key = common_password(password)
     if key:
-        print(f'\033[31mKNOWN PASSWORD! This is a common password in the world, dont use it!\033[m')
+        print(f'\033[31m{password} is a KNOWN PASSWORD! This is a common password in the world, dont use it!\033[m')
     else:
         # Checking length and password
         if len(password) >= 12:
@@ -35,15 +38,19 @@ def pass_check(password):
         for check_level in secure_level:
             if secure_level[check_level]:
                 level+=1
-                print(f'Check {index}/5 [{check_level}]: \033[32mSuccess!\033[m')
+                print(f'\033[34mCheck {index}/5 [{check_level}]:\033[m \033[32mSuccess!\033[m')
             else:
-                print(f'Check {index}/5 [{check_level}]: \033[31mFail!\033[m')
+                print(f'\033[34mCheck {index}/5 [{check_level}]:\033[m \033[31mFail!\033[m')
             index += 1
 
         # How secure is the password
         if level == 5:
-            print(f'Password: \033[36mStrong\033[m')
+            print(f'\033[34mPassword:\033[m \033[36mStrong\033[m')
         elif 5 > level > 3:
-            print(f'Password:  \033[33mMedium\033[m')
+            print(f'\033[34mPassword:\033[m  \033[33mMedium\033[m')
         else:
-            print(f'Password:  \033[31mWeak\033[m')
+            print(f'\033[34mPassword:\033[m  \033[31mWeak\033[m')
+
+
+        # Hash digest
+        print(f'\033[34mHash sha256 digest of your password:\n\033[35m> {hash_password(password)}\033[m')
