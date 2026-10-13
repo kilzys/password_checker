@@ -9,7 +9,10 @@ Hash is function that we use to transfer data into an output, this output is cal
 <br>
 
 ## To Do
--
+- zxcvbn
+- https://github.com/dropbox/zxcvbn
+- https://zxcvbn-ts.github.io/zxcvbn/guide/
+- https://pypi.org/project/zxcvbn/
 
 <br>
 

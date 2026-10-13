@@ -3,16 +3,21 @@ from assets.password_library import common_password
 from string import punctuation, digits, ascii_lowercase, ascii_uppercase
 from assets.hashpassword import hash_password
 
-# Functions
-secure_level = {'uppercase': False, 
-    'lowercase': False,
-    'length': False,
-    'digits': False,
-    'special_char': False
-     }
-number = False
-
 def pass_check(password):
+    # Start from default
+    secure_level = {'uppercase': False, 'lowercase': False,'length': False,'digits': False,'special_char': False}
+
+    # If 'exit' the program leaves
+    if password.lower().strip() == 'exit':
+        print("\033[m\n")
+        return
+
+    # If password is blank
+    if password.strip() == '':
+        print('\033[31mBlank password! Some systems allow it, and attackers try it first.\033[m')
+        return
+
+    # Check for common passwords
     key = common_password(password)
     if key:
         print(f'\033[31m{password} is a KNOWN PASSWORD! This is a common password in the world, dont use it!\033[m')
@@ -22,7 +27,8 @@ def pass_check(password):
             secure_level['length'] = True
 
         for word in password:
-            # Number check
+            # Password check
+            # Spaces are ignored
             if word in ascii_lowercase:
                 secure_level['lowercase'] = True
             if word in ascii_uppercase:
